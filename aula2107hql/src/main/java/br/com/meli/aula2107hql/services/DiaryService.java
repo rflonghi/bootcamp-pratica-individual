@@ -13,7 +13,7 @@ public class DiaryService {
     @Autowired
     DiaryRepository diaryRepository;
 
-    public List<Diary> getDentistDyarys(Long dentisId) {
+    public List<Diary> getDentistDiarysByDentistId(Long dentisId) {
         return diaryRepository.findAllByDentist_Id(dentisId);
     }
 
